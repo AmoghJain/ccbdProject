@@ -1,0 +1,36 @@
+Helper Class
+
+cloudsim:
+DataCenterCharacteristics - Model a Datacenter in terms of its OS, management policy(static porperties)
+File - input files in the cloudsim environment
+Log - already specified
+ParameterException - report bad or invalid parameters
+Pe - processing element(CPU unit)
+VmAllocationPolicySimple - allocation policy for a VM
+VmSchedulerTimeSharedOverSubscription - allows oversubscription of resources
+
+cloud.core.cloudsim:
+CloudSim - extends cloudsim core to enable network simulation
+
+cloudsim.power:
+PowerHost - simulation of power aware hosts
+PowerVm - stores CPU utilization histtory
+
+cloudsim.provisioner:
+BwProvisionerSimple - simple best effort allocation of bandwidth policy
+Pe---"----- - best effort to allocate processing element
+Ram ---"---- - memory to VM
+
+cloudsimdisk:
+MyCloudlet - models cloudlet apps extends Cloudlet.java to include RequiredFiles and DataFiles
+MyPowerDatacenterBroker - a broker (custom)
+
+cloudsimdisk.models.hdd:
+----"----- already specified
+
+cloudsimdisk.power:
+MyPowerDatacenter - power aware data center 
+MyPowerHarddriveStorage - enables simulation of power awareharddrives
+
+cloudsimdisk.power.models.hdd:
+PowerModelHdd - abstract class of power for all hard drives
